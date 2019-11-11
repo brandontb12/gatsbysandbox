@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   siteMetadata: {
-    title: `Federalist | Gatsby | USWDS`,
+    title: `DEFENSE HEALTHCARE MANAGEMENT SYSTEMS`,
     header: {
       secondaryLinks: [
         { text: 'Secondary link', link: '/' },
@@ -10,7 +10,7 @@ module.exports = {
       ],
       navigation: [
         {
-          title: 'Current Section',
+          title: 'Innovation Hubs',
           items: [
             { text: 'Navigation link', link: '/' },
             { text: 'Navigation link', link: '/' },
@@ -18,7 +18,7 @@ module.exports = {
           ],
         },
         {
-          title: 'Section',
+          title: 'For Airmen',
           items: [
             { text: 'Navigation link', link: '/' },
             { text: 'Navigation link', link: '/' },
@@ -26,7 +26,13 @@ module.exports = {
           ],
         },
         {
-          items: [{ text: 'Agency Spending', link: '/spending' }],
+          items: [{ text: 'For Industry', link: '/spending' }],
+        },
+        {
+          items: [{ text: 'For Academia', link: '/spending' }],
+        },
+        {
+          items: [{ text: 'Events', link: '/spending' }],
         },
       ],
     },

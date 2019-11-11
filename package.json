@@ -29,12 +29,17 @@
     "gatsby-transformer-yaml": "^2.2.4",
     "lodash": "^4.17.15",
     "prop-types": "^15.6.2",
-    "react": "^16.8.6",
+    "react": "^16.11.0",
     "react-dom": "^16.8.6",
     "uswds": "^2.0.3"
   },
   "devDependencies": {
     "prettier": "^1.15.3",
     "rimraf": "^2.6.3"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/18f/federalist-gatsby-uswds-template/issues"
+  },
+  "homepage": "https://github.com/18f/federalist-gatsby-uswds-template#readme",
+  "main": "src/pages/index.js"
 }

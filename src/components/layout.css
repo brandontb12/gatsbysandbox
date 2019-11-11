@@ -9,9 +9,8 @@
   position: absolute !important;
   top: 0;
   z-index: -1;
-  width: 500px;
-  height: 500px;
-  right: -10px;
+  width: 100%;
+  height: 100%;
 }
 
 .spending-agency__header {

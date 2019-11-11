@@ -49,7 +49,8 @@ const Header = ({ title, header }) => (
                 <Link className="usa-nav__link" to={navGroup.items[0].link}>
                   <span>{navGroup.items[0].text}</span>
                 </Link>
-              )}
+              )
+              }
             </li>
           ))}
         </Accordion>
