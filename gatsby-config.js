@@ -9,21 +9,27 @@ module.exports = {
         { text: 'Another secondary link', link: '/' },
       ],
       navigation: [
+        // {
+        //   title: 'Innovation Hubs',
+        //   items: [
+        //     { text: 'Navigation link', link: '/' },
+        //     { text: 'Navigation link', link: '/' },
+        //     { text: 'Navigation link', link: '/' },
+        //   ],
+        // },
+        // {
+        //   title: 'For Airmen',
+        //   items: [
+        //     { text: 'Navigation link', link: '/' },
+        //     { text: 'Navigation link', link: '/' },
+        //     { text: 'Navigation link', link: '/' },
+        //   ],
+        // },
         {
-          title: 'Innovation Hubs',
-          items: [
-            { text: 'Navigation link', link: '/' },
-            { text: 'Navigation link', link: '/' },
-            { text: 'Navigation link', link: '/' },
-          ],
+          items: [{ text: 'Innovation Hubs', link: '/' }],
         },
         {
-          title: 'For Airmen',
-          items: [
-            { text: 'Navigation link', link: '/' },
-            { text: 'Navigation link', link: '/' },
-            { text: 'Navigation link', link: '/' },
-          ],
+          items: [{ text: 'For Airmen', link: '/spending' }],
         },
         {
           items: [{ text: 'For Industry', link: '/spending' }],
