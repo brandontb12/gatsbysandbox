@@ -15,7 +15,6 @@ const Layout = ({ children }) => (
             title
             header {
               navigation {
-                title
                 items {
                   text
                   link

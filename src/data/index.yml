@@ -1,27 +1,25 @@
 page: index
 callout:
-  title: Bring attention to a project priority
-  text: Support the callout with some short explanatory text. You don’t need more than a couple of sentences.
+  title: Defense Healthcare Management Systems
+  text: The Program Executive Office, Defense Healthcare Management Systems (PEO DHMS) was chartered to transofrm the delivery of healthcare and advance data sharing through a modernized electronic health record (EHR) for service members, veterans, and their families.
   cta:
-    text: Call to action
+    text: Innovation Hubs
     link: '/'
 media:
-  - title: Graphic headings can vary.
-    text: Graphic headings can be used a few different ways, depending on what your landing page is for. Highlight your values, specific program areas, or results.
-  - title: Stick to 6 or fewer words.
-    text: Keep body text to about 30 words. They can be shorter, but try to be somewhat balanced across all four. It creates a clean appearance with good spacing.
-  - title: Never highlight anything without a goal.
-    text: For anything you want to highlight here, understand what your users know now, and what activity or impression you want from them after they see it.
-  - title: Could also have 2 or 6.
-    text: In addition to your goal, find out your users’ goals. What do they want to know or do that supports your mission? Use these headings to show those.
+  - title: DoD/VA Interagency Program Office (IPO)
+    text: Leads the DoD and Veterans Affairs' (VA) efforts to implement national health data standards to ensure interoperability among the DoD, VA, and private sector healthcare worldwide
+  - title: DoD Healthcare Management System Modernization (DHMSM)
+    text: Oversees the acquisition and deployment of MHS GENESIS. Defense Medical Information Exchange (DMIX) provides technical solutions for seamless data sharing and interoperable EHRs that will evolve with national standards. Joint Longitudinal Viewer (JLV) is a clinical application that provides an integrated, read-only display of health data from DoD, VA, and private sector partners in a common data viewer.
+  - title: Joint Operational Medicine Information Systems (JOMIS).
+    text: Leads the acquisition and deployment of MHS GENESIS in operational medicine while sustaining the Theater Medical Information Program-Joint (TMIP-J) products. Mobile Computing Capability (MCC) is a medical application that allows first responders to document patient status and treatments rendered at the point of injury. The application may be loaded onto commercially available mobile devices. Theater Medical Data Store (TMDS) is a Non-Classified Internet Protocol Router Network (NIPRNet)-based web system that allows providers to view and document a patient’s complete operational electronic health record by compiling his/her health history from various electronic military healthcare systems within the operational environment. Medical Situational Awareness in the Theater (MSAT) is a web-based application on the Secret Internet Protocol Router Network (SIPRNet) that combines data from multiple sources, providing a common operating picture and decision support for deployed medical forces.
 section:
-  title: Section heading
-  text: 'Everything up to this point should help people understand your agency or project: who you are, your goal or mission, and how you approach it. Use this section to encourage them to act. Describe why they should get in touch here, and use an active verb on the button below. “Get in touch,” “Learn more,” and so on.'
+  title: Newsletters
+  text: Select issues below to download The Scope, PEO DHMS's external newsletter. Sign up to get email updates when a new issue is published.
   cta:
-    text: Call to action
+    text: The Scope
     link: '/'
 tagline:
-  title: A tagline highlights your approach
+  title: Program Overview
   content:
-    - The tagline should inspire confidence and interest, focusing on the value that your overall approach offers to your audience. Use a heading typeface and keep your tagline to just a few words, and don’t confuse or mystify.
-    - Use the right side of the grid to explain the tagline a bit more. What are your goals? How do you do your work? Write in the present tense, and stay brief here. People who are interested can find details on internal pages.
+    - PEO DHMS is an acquisition organization with a direct reporting relationship to the Office of the Under Secretary of Defense for Acquisition and Sustainment (OUSD(A&S)), and administratively attached to the Defense Health Agency.
+    - In July 2015, the contract for MHS GENESIS was awarded to the Leidos Partnership for Defense Health. The Department of Defense (DoD) acquired a widely used state-of-the-market EHR system.

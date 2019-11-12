@@ -2,11 +2,11 @@ const path = require('path');
 
 module.exports = {
   siteMetadata: {
-    title: `DEFENSE HEALTHCARE MANAGEMENT SYSTEMS`,
+    title: `DHMS`,
     header: {
       secondaryLinks: [
-        { text: 'Secondary link', link: '/' },
-        { text: 'Another secondary link', link: '/' },
+        { text: 'Contact Us', link: '/' },
+        { text: 'FAQs', link: '/' },
       ],
       navigation: [
         // {
@@ -26,7 +26,10 @@ module.exports = {
         //   ],
         // },
         {
-          items: [{ text: 'Innovation Hubs', link: '/' }],
+          items: [{ text: 'Home', link: '/' }],
+        },
+        {
+          items: [{ text: 'Innovation Hubs', link: '/spending' }],
         },
         {
           items: [{ text: 'For Airmen', link: '/spending' }],

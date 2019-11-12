@@ -31,7 +31,7 @@ const Header = ({ title, header }) => (
                     className={`usa-nav__link ${idx === 0 ? 'usa-current' : ''}`}
                     controls={`extended-nav-section-${idx}`}
                   >
-                    <span>{navGroup.title}</span>
+                    {/* <span>{navGroup.title}</span> */}
                   </AccordionButton>
                   <AccordionContent
                     id={`extended-nav-section-${idx}`}

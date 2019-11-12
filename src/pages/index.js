@@ -5,6 +5,10 @@ import chunk from 'lodash/fp/chunk';
 import circle from 'uswds_images/circle-124.png';
 import Layout from '../components/layout';
 
+var linkStyle = {
+  padding: "20px"
+}
+
 const Index = ({ data }) => {
   const { callout, media, section, tagline } = data.dataYaml;
   return (
@@ -35,6 +39,16 @@ const Index = ({ data }) => {
             {tagline.content.map((p, idx) => (
               <p key={idx}>{p}</p>
             ))}
+          </div>
+          <div className="tablet:grid-col-6 margin-top-5">
+            <a style={linkStyle} className="usa-button" href="https://health.mil/Reference-Center/Fact-Sheets/2019/07/30/PEO-DHMS-Fact-Sheet">
+              {"PEO DHMS Fact Sheet"}
+            </a>
+          </div>
+          <div className="tablet:grid-col-6 margin-top-5">
+            <Link style={linkStyle} className="usa-button" to={'https://health.mil/Reference-Center/Publications/2019/05/20/PEO-DHMS-Brochure'}>
+              {"PEO DHMS Brochure"}
+            </Link>
           </div>
         </div>
       </section>
