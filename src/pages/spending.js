@@ -55,7 +55,7 @@ const Spending = ({ data, location }) => {
             </aside>
 
             <div className="usa-layout-docs-main_content desktop:grid-col-9 usa-prose">
-              <h1>Agencies</h1>
+              <h1>Innovation Hubs</h1>
 
               <p className="usa-font-lead">
                 The 5 top-tier agencies with the largest budgets. Data from

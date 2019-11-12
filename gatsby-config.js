@@ -32,16 +32,13 @@ module.exports = {
           items: [{ text: 'Innovation Hubs', link: '/spending' }],
         },
         {
-          items: [{ text: 'For Airmen', link: '/spending' }],
+          items: [{ text: 'For Industry', link: '/industry' }],
         },
         {
-          items: [{ text: 'For Industry', link: '/spending' }],
+          items: [{ text: 'For Academia', link: '/academia' }],
         },
         {
-          items: [{ text: 'For Academia', link: '/spending' }],
-        },
-        {
-          items: [{ text: 'Events', link: '/spending' }],
+          items: [{ text: 'Events', link: '/events' }],
         },
       ],
     },

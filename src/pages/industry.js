@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 
-const Test = ({data}) => {
+const Industry = ({data}) => {
     const { callout } = data.dataYaml;
     return (
         <Layout>
@@ -14,8 +14,8 @@ const Test = ({data}) => {
 }
 
 export const query = graphql`
-  query TestQuery {
-    dataYaml(page: { eq: "test" }) {
+  query IndustryQuery {
+    dataYaml(page: { eq: "industry" }) {
       callout {
         tag
       }
@@ -23,4 +23,4 @@ export const query = graphql`
   }
 `;
 
-export default Test;
+export default Industry;

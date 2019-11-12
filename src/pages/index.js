@@ -46,9 +46,9 @@ const Index = ({ data }) => {
             </a>
           </div>
           <div className="tablet:grid-col-6 margin-top-5">
-            <Link style={linkStyle} className="usa-button" to={'https://health.mil/Reference-Center/Publications/2019/05/20/PEO-DHMS-Brochure'}>
+            <a style={linkStyle} className="usa-button" href="https://health.mil/Reference-Center/Publications/2019/05/20/PEO-DHMS-Brochure">
               {"PEO DHMS Brochure"}
-            </Link>
+            </a>
           </div>
         </div>
       </section>
