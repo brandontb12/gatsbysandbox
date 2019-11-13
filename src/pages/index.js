@@ -6,7 +6,17 @@ import circle from 'uswds_images/circle-124.png';
 import Layout from '../components/layout';
 
 var linkStyle = {
-  padding: "20px"
+  padding: "20px",
+  fontFamily: "Sans Sarif"
+}
+
+var headerStyle = {
+  color: "#0076d6",
+  fontFamily: "Sans Sarif"
+}
+
+var textStyle = {
+  fontFamily: "Sans Sarif"
 }
 
 const Index = ({ data }) => {
@@ -21,9 +31,9 @@ const Index = ({ data }) => {
         />
         <div className="grid-container">
           <div className="usa-hero__callout">
-            <h2 className="usa-hero__heading">{callout.title}</h2>
-            <p>{callout.text}</p>
-            <Link className="usa-button" to={callout.cta.link}>
+            <h2 style={textStyle} className="usa-hero__heading">{callout.title}</h2>
+            <p style={textStyle}>{callout.text}</p>
+            <Link style={textStyle} className="usa-button" to={callout.cta.link}>
               {callout.cta.text}
             </Link>
           </div>
@@ -33,11 +43,11 @@ const Index = ({ data }) => {
       <section className="grid-container usa-section">
         <div className="grid-row grid-gap">
           <div className="tablet:grid-col-4">
-            <h2 className="font-heading-xl margin-top-0 tablet:margin-bottom-0">{tagline.title}</h2>
+            <h2 style={headerStyle} className="font-heading-xl margin-top-0 tablet:margin-bottom-0">{tagline.title}</h2>
           </div>
           <div className="tablet:grid-col-8 usa-prose">
             {tagline.content.map((p, idx) => (
-              <p key={idx}>{p}</p>
+              <p style={textStyle} key={idx}>{p}</p>
             ))}
           </div>
           <div className="tablet:grid-col-6 margin-top-5">
@@ -65,8 +75,8 @@ const Index = ({ data }) => {
                     alt="circle"
                   />
                   <div className="usa-media-block__body">
-                    <h3 className="usa-graphic-list__heading">{title}</h3>
-                    <p>{text}</p>
+                    <h3 style={textStyle} className="usa-graphic-list__heading">{title}</h3>
+                    <p style={textStyle}>{text}</p>
                   </div>
                 </div>
               ))}
@@ -77,9 +87,9 @@ const Index = ({ data }) => {
 
       <section className="usa-section">
         <div className="grid-container">
-          <h2 className="font-heading-xl margin-y-0">{section.title}</h2>
-          <p className="usa-intro">{section.text}</p>
-          <Link className="usa-button usa-button--big" to={section.cta.link}>
+          <h2 style={headerStyle} className="font-heading-xl margin-y-0">{section.title}</h2>
+          <p style={textStyle} className="usa-intro">{section.text}</p>
+          <Link style={linkStyle} className="usa-button usa-button--big" to={section.cta.link}>
             {section.cta.text}
           </Link>
         </div>

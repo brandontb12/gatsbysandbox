@@ -11,12 +11,29 @@ import {
   Header as UswdsHeader,
 } from 'uswds-react';
 
+var titleStyle = {
+  color: "#0076d6",
+  fontSize: "500%",
+  textAlign: "center",
+  alignSelf: "right",
+  marginTop: "-2rem",
+  marginBottom: "0rem",
+  marginRight: "30rem",
+  fontFamily: "Sans Sarif"
+}
+
+var linkStyle = {
+  color: "#0076d6",
+  fontFamily: "Sans Sarif"
+}
+
 const propTypes = {
   title: PropTypes.string.isRequired,
 };
 
 const Header = ({ title, header }) => (
-  <UswdsHeader title={title} extended>
+  <UswdsHeader extended>
+    <h1 style={titleStyle}>DHMS</h1>
     <Navigation>
       <div className="usa-nav__inner">
         <button className="usa-nav__close">
@@ -47,7 +64,7 @@ const Header = ({ title, header }) => (
                 </React.Fragment>
               ) : (
                 <Link className="usa-nav__link" to={navGroup.items[0].link}>
-                  <span>{navGroup.items[0].text}</span>
+                  <span style={linkStyle}>{navGroup.items[0].text}</span>
                 </Link>
               )
               }
