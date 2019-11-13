@@ -33,7 +33,6 @@ const propTypes = {
 
 const Header = ({ title, header }) => (
   <UswdsHeader extended>
-    <h1 style={titleStyle}>DHMS</h1>
     <Navigation>
       <div className="usa-nav__inner">
         <button className="usa-nav__close">
