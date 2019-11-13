@@ -13,7 +13,7 @@ import {
 
 var titleStyle = {
   color: "#0076d6",
-  fontSize: "500%",
+  fontSize: "350%",
   textAlign: "center",
   alignSelf: "right",
   marginTop: "-2rem",

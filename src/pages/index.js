@@ -12,11 +12,41 @@ var linkStyle = {
 
 var headerStyle = {
   color: "#0076d6",
-  fontFamily: "Sans Sarif"
+  fontFamily: "Sans Sarif",
+  fontSize: "300%"
 }
 
 var textStyle = {
   fontFamily: "Sans Sarif"
+}
+
+var boxStyle = {
+  marginTop: "-.5rem",
+  padding: ".2rem"
+}
+
+var calloutHeader = {
+  fontSize: "150%"
+}
+
+var borderStyle = {
+  border: "2px solid #0076d6"
+}
+
+var paragraphSize = {
+  fontSize: "110%"
+}
+
+var horizontalLine = {
+    backgroundColor: "#0076d6",
+    width: "5rem",
+    height: "2px",
+    display: "compact",
+    marginTop: "5.2rem"
+}
+
+var blockStyle = {
+  display: "inline-block"
 }
 
 const Index = ({ data }) => {
@@ -31,8 +61,8 @@ const Index = ({ data }) => {
         />
         <div className="grid-container">
           <div className="usa-hero__callout">
-            <h2 style={textStyle} className="usa-hero__heading">{callout.title}</h2>
-            <p style={textStyle}>{callout.text}</p>
+            <h2 style={textStyle, boxStyle, calloutHeader} className="usa-hero__heading">{callout.title}</h2>
+            <p style={textStyle} className="tablet:margin-top-1" >{callout.text}</p>
             <Link style={textStyle} className="usa-button" to={callout.cta.link}>
               {callout.cta.text}
             </Link>
@@ -42,12 +72,13 @@ const Index = ({ data }) => {
 
       <section className="grid-container usa-section">
         <div className="grid-row grid-gap">
-          <div className="tablet:grid-col-4">
-            <h2 style={headerStyle} className="font-heading-xl margin-top-0 tablet:margin-bottom-0">{tagline.title}</h2>
+          <div className="tablet:grid-col-3">
+            <h2 style={headerStyle} className="font-heading-xl margin-top-4 tablet:margin-bottom-0">{tagline.title}</h2>
           </div>
-          <div className="tablet:grid-col-8 usa-prose">
+          <div style={horizontalLine} className="tablet:grid-col-1"></div>
+          <div style={borderStyle} className="tablet:grid-col-8">
             {tagline.content.map((p, idx) => (
-              <p style={textStyle} key={idx}>{p}</p>
+              <p style={textStyle, paragraphSize} key={idx}>{p}</p>
             ))}
           </div>
           <div className="tablet:grid-col-6 margin-top-5">
