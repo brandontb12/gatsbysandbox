@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'gatsby';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 import cx from 'classnames';
+import Img from 'gatsby-image';
 import { navigation } from 'uswds_components';
 import UswdsComponent from './uswds_component';
 
@@ -27,14 +28,37 @@ const propsToClasses = props => ({
   'usa-header--extended': props.extended,
 });
 
+const getHeaderImage = () => {
+  const { header } = useStaticQuery(
+    graphql`
+      query {
+        header: file(base: { eq: "header.png" }) {
+          childImageSharp {
+            fluid(maxHeight:100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    `
+  )
+  return header
+}
+
 const Header = ({ className, children, ...props }) => {
+  const header_img = getHeaderImage();
   const render = ref => (
     <header
       className={cx(propsToClasses(props), className)}
       role="banner"
       ref={ref}
     >
+    
       <div className="usa-navbar">
+        <Img
+          fluid={header_img.childImageSharp.fluid}
+          fadeIn={false}
+        />
         <div className="usa-logo" id="extended-logo">
           <em className="usa-logo__text">
             <Link to="/" title="Home" aria-label="Home">

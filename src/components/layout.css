@@ -12,6 +12,18 @@
   width: 100%;
   height: 100%;
 }
+.usa-hero__logo {
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  float:right;
+}
+
+
+.usa-hero__callout2{
+ max-width:40rem;
+}
 
 .spending-agency__header {
   margin-bottom: '0';

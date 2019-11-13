@@ -3,6 +3,7 @@ import { graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import chunk from 'lodash/fp/chunk';
 import circle from 'uswds_images/circle-124.png';
+import logo from '../images/logo-trans.png';
 import Layout from '../components/layout';
 
 var linkStyle = {
@@ -55,7 +56,7 @@ const Index = ({ data }) => {
     <Layout>
       <section className="usa-hero">
         <Img
-          fluid={data.file.childImageSharp.fluid}
+          fluid={data.banner.childImageSharp.fluid}
           className="usa-hero__image"
           fadeIn={false}
         />
@@ -66,6 +67,7 @@ const Index = ({ data }) => {
             <Link style={textStyle} className="usa-button" to={callout.cta.link}>
               {callout.cta.text}
             </Link>
+           
           </div>
         </div>
       </section>
@@ -131,9 +133,16 @@ const Index = ({ data }) => {
 
 export const query = graphql`
   query IndexQuery {
-    file(base: { eq: "hero.png" }) {
+    banner: file(base: { eq: "banner.png" }) {
       childImageSharp {
         fluid(maxHeight: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    logo: file(base: { eq: "logo.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 369, maxHeight: 350) {
           ...GatsbyImageSharpFluid
         }
       }

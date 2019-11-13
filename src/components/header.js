@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
+import logo from '../images/logo-trans.png';
 import close from 'uswds_images/close.svg';
 import {
   Accordion,
   AccordionButton,
   AccordionContent,
   Navigation,
-  Search,
   Header as UswdsHeader,
 } from 'uswds-react';
 
@@ -72,14 +72,7 @@ const Header = ({ title, header }) => (
           ))}
         </Accordion>
         <div className="usa-nav__secondary">
-          <ul className="usa-nav__secondary-links">
-            {header.secondaryLinks.map((secondaryLink, idx) => (
-              <li key={idx} className="usa-nav__secondary-item">
-                <Link to={secondaryLink.link}>{secondaryLink.text}</Link>
-              </li>
-            ))}
-          </ul>
-          <Search small />
+          
         </div>
       </div>
     </Navigation>
@@ -87,5 +80,6 @@ const Header = ({ title, header }) => (
 );
 
 Header.propTypes = propTypes;
+
 
 export default Header;
