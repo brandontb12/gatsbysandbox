@@ -8,6 +8,14 @@ import Layout from '../components/layout';
 
 var linkStyle = {
   padding: "20px",
+  fontFamily: "Sans Sarif",
+  width: "100%",
+  height: "100%",
+  fontSize: "100%"
+}
+
+var scopeStyle = {
+  padding: "20px",
   fontFamily: "Sans Sarif"
 }
 
@@ -74,23 +82,60 @@ const Index = ({ data }) => {
 
       <section className="grid-container usa-section">
         <div className="grid-row grid-gap">
-          <div className="tablet:grid-col-3">
+          <div className="tablet:grid-col-4">
             <h2 style={headerStyle} className="font-heading-xl margin-top-4 tablet:margin-bottom-0">{tagline.title}</h2>
           </div>
           <div style={horizontalLine} className="tablet:grid-col-1"></div>
-          <div style={borderStyle} className="tablet:grid-col-8">
+          <div style={borderStyle} className="tablet:grid-col-7">
             {tagline.content.map((p, idx) => (
               <p style={textStyle, paragraphSize} key={idx}>{p}</p>
             ))}
           </div>
-          <div className="tablet:grid-col-6 margin-top-5">
-            <a style={linkStyle} className="usa-button" href="https://health.mil/Reference-Center/Fact-Sheets/2019/07/30/PEO-DHMS-Fact-Sheet">
-              {"PEO DHMS Fact Sheet"}
+          <div className="tablet:grid-col-4">
+            <h2 style={headerStyle} className="font-heading-xl margin-top-4 tablet:margin-bottom-0">Contracting Division</h2>
+          </div>
+          <div style={horizontalLine} className="tablet:grid-col-1"></div>
+          <div style={borderStyle} className="tablet:grid-col-7">
+              <p style={textStyle, paragraphSize}>Contracting Division Placeholder</p>
+          </div>
+          <div className="tablet:grid-col-3 margin-top-5">
+            <a style={linkStyle} className="usa-button" href="">
+              {"Organization"}
             </a>
           </div>
-          <div className="tablet:grid-col-6 margin-top-5">
-            <a style={linkStyle} className="usa-button" href="https://health.mil/Reference-Center/Publications/2019/05/20/PEO-DHMS-Brochure">
-              {"PEO DHMS Brochure"}
+          <div className="tablet:grid-col-3 margin-top-5">
+            <a style={linkStyle} className="usa-button" href="">
+              {"Opportunities"}
+            </a>
+          </div>
+          <div className="tablet:grid-col-3 margin-top-5">
+            <a style={linkStyle} className="usa-button" href="">
+              {"Conferences"}
+            </a>
+          </div>
+          <div className="tablet:grid-col-3 margin-top-5">
+            <a style={linkStyle} className="usa-button" href="">
+              {"Research and Analysis"}
+            </a>
+          </div>
+          <div className="tablet:grid-col-3 margin-top-5">
+            <a style={linkStyle} className="usa-button" href="">
+              {"Training and Workshops"}
+            </a>
+          </div>
+          <div className="tablet:grid-col-3 margin-top-5">
+            <a style={linkStyle} className="usa-button" href="">
+              {"Publications"}
+            </a>
+          </div>
+          <div className="tablet:grid-col-3 margin-top-5">
+            <a style={linkStyle} className="usa-button" href="">
+              {"Blog"}
+            </a>
+          </div>
+          <div className="tablet:grid-col-3 margin-top-5">
+            <a style={linkStyle} className="usa-button" href="">
+              {"Industry and Feedback"}
             </a>
           </div>
         </div>
@@ -124,7 +169,7 @@ const Index = ({ data }) => {
             <div className="tablet:grid-col-6">
               <h2 style={headerStyle} className="font-heading-xl margin-y-0">{section.title}</h2>
               <p style={textStyle} className="usa-intro">{section.text}</p>
-              <Link style={linkStyle} className="usa-button usa-button--big" to={section.cta.link}>
+              <Link style={scopeStyle} className="usa-button usa-button--big" to={section.cta.link}>
                 {section.cta.text}
               </Link>
             </div>
