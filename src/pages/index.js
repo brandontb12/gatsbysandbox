@@ -120,11 +120,19 @@ const Index = ({ data }) => {
 
       <section className="usa-section">
         <div className="grid-container">
-          <h2 style={headerStyle} className="font-heading-xl margin-y-0">{section.title}</h2>
-          <p style={textStyle} className="usa-intro">{section.text}</p>
-          <Link style={linkStyle} className="usa-button usa-button--big" to={section.cta.link}>
-            {section.cta.text}
-          </Link>
+          <div className="grid-row grid-gap">
+            <div className="tablet:grid-col-6">
+              <h2 style={headerStyle} className="font-heading-xl margin-y-0">{section.title}</h2>
+              <p style={textStyle} className="usa-intro">{section.text}</p>
+              <Link style={linkStyle} className="usa-button usa-button--big" to={section.cta.link}>
+                {section.cta.text}
+              </Link>
+            </div>
+            <div className="tablet:grid-col-6">
+              <h2 style={headerStyle} className="font-heading-xl margin-y-0">Blogs and Podcasts</h2>
+              <p style={textStyle} className="usa-intro">Blogs and Podcasts placeholder.</p>
+            </div>
+          </div>
         </div>
       </section>
     </Layout>
