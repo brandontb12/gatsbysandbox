@@ -11,17 +11,6 @@ import {
   Header as UswdsHeader,
 } from 'uswds-react';
 
-var titleStyle = {
-  color: "#0076d6",
-  fontSize: "350%",
-  textAlign: "center",
-  alignSelf: "right",
-  marginTop: "-2rem",
-  marginBottom: "0rem",
-  marginRight: "30rem",
-  fontFamily: "Sans Sarif"
-}
-
 var linkStyle = {
   color: "#0076d6",
   fontFamily: "Sans Sarif"

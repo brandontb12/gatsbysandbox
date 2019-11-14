@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   siteMetadata: {
-    title: ``,
+    title: `Defense Healthcare Management Systems`,
     header: {
       secondaryLinks: [
         { text: 'Contact Us', link: '/' },

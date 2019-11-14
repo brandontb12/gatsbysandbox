@@ -37,3 +37,11 @@
   font-size: 10rem;
   width: 100%;
 }
+
+@media all and (min-width: 64em){
+
+  .usa-logo {
+    display:none !important;
+  }
+
+}
