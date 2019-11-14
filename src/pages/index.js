@@ -38,6 +38,13 @@ var calloutHeader = {
   fontSize: "150%"
 }
 
+var centerText = {
+  textAlign: "center",
+  color: "#0076d6",
+  fontFamily: "Sans Sarif",
+  fontSize: "300%"
+}
+
 var borderStyle = {
   border: "2px solid #0076d6"
 }
@@ -91,12 +98,8 @@ const Index = ({ data }) => {
               <p style={textStyle, paragraphSize} key={idx}>{p}</p>
             ))}
           </div>
-          <div className="tablet:grid-col-4">
-            <h2 style={headerStyle} className="font-heading-xl margin-top-4 tablet:margin-bottom-0">Contracting Division</h2>
-          </div>
-          <div style={horizontalLine} className="tablet:grid-col-1"></div>
-          <div style={borderStyle} className="tablet:grid-col-7">
-              <p style={textStyle, paragraphSize}>Contracting Division Placeholder</p>
+          <div className="tablet:grid-col-12">
+            <h2 style={headerStyle, centerText} className="font-heading-xl margin-top-4 tablet:margin-bottom-0">Contracting Division</h2>
           </div>
           <div className="tablet:grid-col-3 margin-top-5">
             <a style={linkStyle} className="usa-button" href="">
