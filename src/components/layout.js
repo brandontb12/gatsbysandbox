@@ -6,6 +6,10 @@ import Header from './header';
 
 const mainContent = 'main-content';
 
+var colorBackground = {
+  backgroundColor: "#162e51"
+}
+
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -34,7 +38,9 @@ const Layout = ({ children }) => (
         <SkipNav skipsTo={mainContent} />
         <Banner />
         <div className="usa-overlay" />
-        <Header {...data.site.siteMetadata} />
+        <div style={colorBackground}>
+          <Header {...data.site.siteMetadata} />
+        </div>
         <main id={mainContent}>{children}</main>
       </div>
     )}

@@ -11,16 +11,18 @@ var linkStyle = {
   fontFamily: "Sans Sarif",
   width: "100%",
   height: "100%",
-  fontSize: "100%"
+  fontSize: "100%",
+  backgroundColor: "#162e51"
 }
 
 var scopeStyle = {
   padding: "20px",
-  fontFamily: "Sans Sarif"
+  fontFamily: "Sans Sarif",
+  backgroundColor: "#162e51"
 }
 
 var headerStyle = {
-  color: "#0076d6",
+  color: "#162e51",
   fontFamily: "Sans Sarif",
   fontSize: "300%"
 }
@@ -40,13 +42,13 @@ var calloutHeader = {
 
 var centerText = {
   textAlign: "center",
-  color: "#0076d6",
+  color: "#162e51",
   fontFamily: "Sans Sarif",
   fontSize: "300%"
 }
 
 var borderStyle = {
-  border: "2px solid #0076d6"
+  border: "2px solid #162e51"
 }
 
 var paragraphSize = {
@@ -54,15 +56,11 @@ var paragraphSize = {
 }
 
 var horizontalLine = {
-    backgroundColor: "#0076d6",
+    backgroundColor: "#162e51",
     width: "5rem",
     height: "2px",
     display: "compact",
     marginTop: "5.2rem"
-}
-
-var blockStyle = {
-  display: "inline-block"
 }
 
 const Index = ({ data }) => {

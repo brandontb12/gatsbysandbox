@@ -12,8 +12,13 @@ import {
 } from 'uswds-react';
 
 var linkStyle = {
-  color: "#0076d6",
+  color: "#ffffff",
   fontFamily: "Sans Sarif"
+}
+
+var active = {
+  borderBottom: "2px solid #ffffff",
+  marginBottom: ".2rem"
 }
 
 const propTypes = {
@@ -51,7 +56,7 @@ const Header = ({ title, header }) => (
                   </AccordionContent>
                 </React.Fragment>
               ) : (
-                <Link className="usa-nav__link" to={navGroup.items[0].link}>
+                <Link activeStyle={active} className="usa-nav__link" to={navGroup.items[0].link}>
                   <span style={linkStyle}>{navGroup.items[0].text}</span>
                 </Link>
               )
